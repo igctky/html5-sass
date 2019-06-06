@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "YuGothic-M";
+  font-weight: normal;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
+}
+@font-face {
+  font-family: "YuGothic-M";
+  font-weight: bold;
+  src: local("YoGothic-Bold"), local("Yu Gothic Bold"), local("Yu Gothic");
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W4);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W6);
+  font-weight: bold;
+}
+
+// basefont
+$font-base:"Hiragino Sans","Hiragino Kaku Gothic ProN",YuGothic-M,YuGothic,"游ゴシック",sans-serif;
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+// font-family: 'Montserrat', sans-serif;
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+// font-family: 'Noto Sans Japanese',
+
+// Montserrat
+$font-montserrat:'Montserrat', sans-serif;
+
+// Noto Sans
+$font-noto:'Noto Sans Japanese';
+
+// FontAwesome
+@mixin fa($content) {
+  font-family: 'FontAwesome';
+  content: $content;
+}

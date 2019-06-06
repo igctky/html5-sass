@@ -1,0 +1,115 @@
+// コンテナ
+.l-container {
+  margin: 0 auto;
+  max-width: 1040px;
+
+  @include max-screen($bp-mobile) {
+    padding: 0 20px;
+  }
+  & > * {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+// 幅90％レイアウト
+.l-wrap-90p {
+  margin: 0 auto;
+  width: 90%;
+
+  @include max-screen($bp-mobile) {
+    width: 100%;
+  }
+}
+// 幅80％レイアウト
+.l-wrap-80p {
+  margin: 0 auto;
+  width: 80%;
+
+  @include max-screen($bp-mobile) {
+    width: 100%;
+  }
+}
+// 幅70％レイアウト
+.l-wrap-70p {
+  margin: 0 auto;
+  width: 70%;
+
+  @include max-screen($bp-mobile) {
+    width: 100%;
+  }
+}
+// 幅60％レイアウト
+.l-wrap-60p {
+  margin: 0 auto;
+  width: 60%;
+
+  @include max-screen($bp-mobile) {
+    width: 100%;
+  }
+}
+
+// グリッドレイアウト
+.l-flex-wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+// 2分割
+.l-flex-col-2 {
+  margin-bottom: 2em;
+  width: 48%;
+
+  @include max-screen($bp-mobile) {
+    margin-bottom: 4em;
+    width: 100%;
+  }
+}
+// 3分割
+.l-flex-parent-3 {
+  &:after {
+    display: block;
+    width:30%;
+    content:'';
+  }
+}
+.l-flex-col-3 {
+  margin-bottom: 2em;
+  width: 30%;
+
+  @include max-screen($bp-mobile) {
+    margin-bottom: 4em;
+    width: 100%;
+  }
+}
+// 4分割
+.l-flex-parent-4 {
+  &:before {
+    display: block;
+    order:1;
+    width:23%;
+    content:'';
+  }
+  &:after {
+    display: block;
+    width:23%;
+    content:'';
+  }
+}
+.l-flex-col-4 {
+  margin-bottom: 2em;
+  width: 23%;
+
+  @include max-screen($bp-mobile) {
+    margin-bottom: 4em;
+    width: 48%;
+  }
+}
